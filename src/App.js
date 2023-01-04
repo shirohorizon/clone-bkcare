@@ -8,12 +8,10 @@ const App = () => {
       <div className="App">
         <Routes>
           {publicRoutes.map((route, index) => {
-            let Layout = '';
-
+            let Layout = Fragment;
+            console.log(route);
             if (route.layout) {
               Layout = route.layout;
-            } else if (route.layout === null) {
-              Layout = Fragment;
             }
 
             const Page = route.component;
