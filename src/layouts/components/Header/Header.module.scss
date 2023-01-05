@@ -1,0 +1,109 @@
+.wrapper {
+    width     : 100%;
+    box-shadow: 2px 4px 8px rgba($color: #000, $alpha: 0.1);
+}
+
+.inner {
+    height         : var(--default-layout-header-height);
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    .actions-left {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        .bar-icon {
+            font-size    : 2.2rem;
+            padding-right: 10px;
+        }
+
+        .logo-link {
+            display: flex;
+
+            .logo {
+                width     : 160px;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .nav {
+        flex: 1;
+
+        .nav-list {
+            width          : 100%;
+            list-style     : none;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            .nav-item {
+                padding-left: 25px;
+                cursor      : pointer;
+
+                .nav-title {
+                    font-size  : 1.2rem;
+                    font-weight: 600;
+                    line-height: 1.7;
+                }
+
+                .nav-detail {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .actions-right {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        .support,
+        .language {
+            padding-right: 15px;
+            font-size    : 1.4rem;
+            font-weight  : 600;
+            display      : flex;
+            align-items  : center;
+            cursor       : pointer;
+
+            .action-title {
+                opacity           : 0.6;
+                transition        : all 0.2s ease;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition   : all 0.2s ease;
+                -ms-transition    : all 0.2s ease;
+                -o-transition     : all 0.2s ease;
+            }
+        }
+
+
+        .language:hover .action-title,
+        .language:hover .language-down {
+            opacity: 1;
+        }
+
+        .language-down {
+            padding-left: 2px;
+            opacity     : 0.6;
+        }
+
+        .support-icon,
+        .language-icon {
+            color             : var(--primary);
+            font-size         : 1.6rem;
+            padding-right     : 5px;
+            cursor            : pointer;
+            transition        : all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition   : all 0.2s ease;
+            -ms-transition    : all 0.2s ease;
+            -o-transition     : all 0.2s ease;
+        }
+    }
+}
