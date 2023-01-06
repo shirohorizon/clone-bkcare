@@ -7,27 +7,35 @@ import style from './Images.module.scss';
 
 const cx = classNames.bind(style);
 
-const Image = (
-  { src, alt, className, fallback: customFallback = images.noImage, ...props },
-  ref,
-) => {
-  const [fallback, setFallback] = useState('');
+const Image = forwardRef(
+  (
+    {
+      src,
+      alt,
+      className,
+      fallback: customFallback = images.noImage,
+      ...props
+    },
+    ref,
+  ) => {
+    const [fallback, setFallback] = useState('');
 
-  const handleErr = () => {
-    setFallback(customFallback);
-  };
+    const handleErr = () => {
+      setFallback(customFallback);
+    };
 
-  return (
-    <img
-      className={cx('wrapper', className)}
-      ref={ref}
-      src={fallback || src}
-      alt={alt}
-      {...props}
-      onError={handleErr}
-    />
-  );
-};
+    return (
+      <img
+        className={cx('wrapper', className)}
+        ref={ref}
+        src={fallback || src}
+        alt={alt}
+        {...props}
+        onError={handleErr}
+      />
+    );
+  },
+);
 
 Image.propTypes = {
   src: PropTypes.string,
@@ -36,4 +44,4 @@ Image.propTypes = {
   fallback: PropTypes.string,
 };
 
-export default forwardRef(Image);
+export default Image;
