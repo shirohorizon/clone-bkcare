@@ -23,5 +23,13 @@
     "surgery-package": "Gói{code}phẫu thuật",
     "medical-products": "Sản phẩm{code}y tế",
     "business-health": "Sức khỏe{code}doanh nghiệp"
+  },
+
+  "search-topic": {
+    "specialty": {
+      "header-title": "Chuyên khoa",
+      "placeholder": "Tìm chuyên khoa",
+      "list-title": "Chuyên khoa nổi bật"
+    }
   }
 }

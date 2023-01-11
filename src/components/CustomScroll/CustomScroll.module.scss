@@ -1,0 +1,38 @@
+#wrapper {
+    overflow: hidden;
+
+    &.overflowX {
+        overflow-x: auto;
+    }
+
+    &.overflowY {
+        overflow-y: auto;
+    }
+
+}
+
+// scroll custom
+
+#wrapper::-webkit-scrollbar {
+    border-radius: 0px;
+    width        : 8px;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+    border-radius        : 4px;
+    background-color     : rgba(22, 24, 35, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius   : 4px;
+    -ms-border-radius    : 4px;
+    -o-border-radius     : 4px;
+}
+
+#wrapper::-webkit-scrollbar-thumb:hover {
+    border-radius   : 4px;
+    background-color: rgba(22, 24, 35, 0.6);
+}
+
+#wrapper::-webkit-scrollbar-track {
+    border-radius   : 0px;
+    background-color: rgba(0, 0, 0, 0);
+}

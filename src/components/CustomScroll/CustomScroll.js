@@ -13,12 +13,13 @@ const CustomScroll = ({
   children,
   ...passProps
 }) => {
-  const classes = cx('wrapper', {
+  const classes = cx({
     overflowX,
     overflowY,
   });
   return (
     <div
+      id={styles.wrapper}
       style={{ width: width, height: height }}
       className={classes}
       {...passProps}

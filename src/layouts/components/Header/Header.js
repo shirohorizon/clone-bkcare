@@ -16,6 +16,7 @@ import images from '~/assets/images';
 import { LOCALES } from '~/translations';
 import { setLanguage } from '~/features/intl/intlSlice';
 import { FormattedMessage } from 'react-intl';
+import { showModal } from '~/features/modal/modalSlice';
 
 const cx = classNames.bind(styles);
 
@@ -47,6 +48,16 @@ const Header = () => {
     dispatch(setLanguage(locale));
   };
 
+  const handleShowModal = () => {
+    dispatch(
+      showModal({
+        name: 'search',
+        data: { topic: 'specialty' },
+        effect: false,
+        innerWidth: '100%',
+      }),
+    );
+  };
   return (
     <header className={cx('wrapper')}>
       <div className={cx('grid')}>
@@ -62,7 +73,11 @@ const Header = () => {
               {/* header nav */}
               <ul className={cx('nav-list')}>
                 {navItems.map((item, index) => (
-                  <li key={index} className={cx('nav-item')}>
+                  <li
+                    onClick={() => handleShowModal()}
+                    key={index}
+                    className={cx('nav-item')}
+                  >
                     <h3 className={cx('nav-title')}>{item.title}</h3>
                     <p className={cx('nav-detail')}>{item.detail}</p>
                   </li>

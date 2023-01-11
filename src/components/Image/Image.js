@@ -13,6 +13,7 @@ const Image = forwardRef(
       src,
       alt,
       className,
+      primary = false,
       fallback: customFallback = images.noImage,
       ...props
     },
@@ -23,10 +24,17 @@ const Image = forwardRef(
     const handleErr = () => {
       setFallback(customFallback);
     };
+    const classes = cx(
+      'wrapper',
+      {
+        primary,
+      },
+      className,
+    );
 
     return (
       <img
-        className={cx('wrapper', className)}
+        className={classes}
         ref={ref}
         src={fallback || src}
         alt={alt}
@@ -42,6 +50,7 @@ Image.propTypes = {
   alt: PropTypes.string,
   className: PropTypes.string,
   fallback: PropTypes.string,
+  primary: PropTypes.bool,
 };
 
 export default Image;

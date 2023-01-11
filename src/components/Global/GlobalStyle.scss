@@ -13,6 +13,7 @@
 }
 
 * {
+
     margin    : 0;
     padding   : 0;
     box-sizing: border-box;
@@ -28,6 +29,7 @@ body {
     font-size     : 1.6rem;
     line-height   : 1.5;
     text-rendering: optimizeSpeed;
+    overflow      : hidden;
     overflow-y    : overlay;
 }
 
@@ -46,21 +48,4 @@ a {
 ul {
     list-style: none;
 
-}
-
-// scroll custom
-
-html *::-webkit-scrollbar {
-    border-radius: 0px;
-    width        : 8px;
-}
-
-html *::-webkit-scrollbar-thumb {
-    border-radius   : 4px;
-    background-color: rgba(22, 24, 35, 0.06);
-}
-
-html *::-webkit-scrollbar-track {
-    border-radius   : 0px;
-    background-color: rgba(0, 0, 0, 0);
 }
