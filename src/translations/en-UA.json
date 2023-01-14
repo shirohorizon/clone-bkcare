@@ -12,8 +12,7 @@
   },
 
   "home-banner": {
-    "title": "foundation medica",
-    "sub-title": "Comprehensive health care",
+    "title": "foundation medica{br}<b>Comprehensive health care</b>",
     "exam-specialty": "Specialty{code}examination",
     "exam-remote": "Remote{code}examination",
     "exam-general": "General{code}examination",
@@ -27,9 +26,9 @@
 
   "search-topic": {
     "specialty": {
-      "header-title": "Chuyên khoa",
-      "placeholder": "Tìm chuyên khoa",
-      "list-title": "Chuyên khoa nổi bật"
+      "header-title": "Specialty",
+      "placeholder": "Find specialty",
+      "list-title": "outstanding specialties"
     }
   }
 }

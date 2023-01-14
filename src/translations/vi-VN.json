@@ -12,8 +12,7 @@
   },
 
   "home-banner": {
-    "title": "Nền Tảng Y Tế",
-    "sub-title": "Chăm sóc sức khỏe toàn diện",
+    "title": "Nền Tảng Y Tế{br}<b>Chăm sóc sức khỏe toàn diện</b>",
     "exam-specialty": "Khám{code}chuyên khoa",
     "exam-remote": "Khám{code}từ xa",
     "exam-general": "Khám{code}tổng quát",

@@ -1,5 +1,8 @@
 const images = {
   logo: require('~/assets/images/logo.svg').default,
+  boCongThuong: require('~/assets/images/bo-cong-thuong.svg').default,
+  youtube: require('~/assets/images/youtube-square.svg').default,
+  facebook: require('~/assets/images/facebook-square.svg').default,
   banner: require('~/assets/images/bookingcare-cover-4.jpg'),
   noImage: require('~/assets/images/No-Image.png'),
   googlePlay: require('~/assets/images/googleplay.png'),

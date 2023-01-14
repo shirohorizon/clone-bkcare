@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import classNames from 'classnames/bind';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
@@ -17,6 +16,7 @@ import { LOCALES } from '~/translations';
 import { setLanguage } from '~/features/intl/intlSlice';
 import { FormattedMessage } from 'react-intl';
 import { showModal } from '~/features/modal/modalSlice';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -65,9 +65,9 @@ const Header = () => {
           <div className={cx('col', 'inner')}>
             <div className={cx('actions-left')}>
               <FontAwesomeIcon className={cx('bar-icon')} icon={faBars} />
-              <Link to={config.routes.header} className={cx('logo-link')}>
+              <Button to={config.routes.header} className={cx('logo-link')}>
                 <Image className={cx('logo')} src={images.logo} alt={'logo'} />
-              </Link>
+              </Button>
             </div>
             <div className={cx('nav')}>
               {/* header nav */}

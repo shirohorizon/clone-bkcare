@@ -1,0 +1,134 @@
+.wrapper {
+    background : #efefef;
+    padding-top: 30px;
+}
+
+.intro {
+    display        : flex;
+    justify-content: flex-start;
+    flex-flow      : column;
+
+    .link {
+        display        : flex;
+        justify-content: flex-start;
+
+        .logo {
+            width     : 200px;
+            object-fit: cover;
+        }
+    }
+
+    .detail {
+        margin     : 5px 0;
+        font-size  : 1.4rem;
+        line-height: 1.2;
+        display    : flex;
+
+        .icon {
+            width        : 15px;
+            padding-right: 5px;
+            font-size    : 1.6rem;
+        }
+    }
+
+    .link-btn {
+        padding-top: 15px;
+        margin     : 0;
+
+        .images {
+            width: 78px;
+        }
+    }
+}
+
+.nav {
+
+    .list {
+        width: 100%;
+
+        .item {
+            display        : flex;
+            justify-content: flex-start;
+            width          : 100%;
+            padding        : 5px 0;
+
+            .nav-link {
+                color    : var(--primary);
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.info {
+    &+.info {
+        margin-top: 15px;
+    }
+
+    .detail {
+        font-size: 1.4rem;
+    }
+}
+
+.download {
+    display       : flex;
+    align-items   : center;
+    padding-top   : 10px;
+    padding-bottom: 30px;
+    border-top    : 1px solid #ccc;
+
+    .title {
+        font-size  : 1.4rem;
+        color      : var(--text-color);
+        font-weight: 400;
+
+        .icon {
+            margin-right: 5px;
+        }
+    }
+
+    .links {
+        display    : flex;
+        align-items: center;
+
+        .link {
+            padding  : 0px 5px;
+            color    : var(--primary);
+            font-size: 1.4rem;
+        }
+
+
+    }
+}
+
+.bottom {
+    padding   : 10px;
+    background: var(--primary);
+
+    .content {
+        display        : flex;
+        align-items    : flex-start;
+        justify-content: space-between;
+
+        .copyright {
+            font-size: 1.2rem;
+            color    : var(--white);
+
+            .icon {
+                font-size    : 1.2rem;
+                padding-right: 5px;
+            }
+        }
+
+        .socials {
+            .image {
+                width  : 32px;
+                padding: 10px 0;
+
+                &+.image {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
